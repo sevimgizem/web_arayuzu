@@ -1,0 +1,466 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-size: 14px;
+	line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #F4F7F9;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #316aff;
+    text-transform: uppercase; /*harfler arasında boşluk oluşturu*/
+    letter-spacing: 1px; /*harfler arasındaki boşluğu 1 px yap*/
+    transition: 200ms all;
+}
+.btn.color-green {
+    background: #36855b;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    
+    background: #141618;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 100px;
+
+}
+
+.metin {
+    margin-left: 120px;
+}
+.header .logo {
+    margin-right: 40px;
+}
+
+.header .menu ul li a {
+    color: rgba(255, 255, 255, .6);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header .menu ul li a i {
+    margin-right: 10px;
+}
+
+.header .menu ul li a:hover {
+    color: #fff;
+}
+
+.header .search {
+    display:flex;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.header .search input {
+    height: 60px;
+    height: 30px;
+    background-color: #21252d;
+    padding: 0 10px;
+    color: #fff;
+}
+
+eader .search input:focus::placeholder {
+    opacity: 0;
+}
+
+.header .search input::placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+.header .search button {
+    width: 32px;
+    height: 30px;
+    background-color: #21252d;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header .search button:hover{
+    background-color: #316aff;
+}
+
+.header .login-buttons ul {
+    display: flex; /*yan yana gelmesini sağlar*/
+}
+
+.header .login-buttons ul li {
+    margin-left: 15px;
+}
+
+.header .login-buttons ul li a {
+    height: 34px;
+    display: block;
+    line-height: 34px;
+    padding: 0 15px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.header .login-buttons ul li a:hover {
+    color: #fff;
+}
+
+.header .login-buttons ul li.join-now-btn a {
+    background-color: #36855b;
+    border-radius: 4px;
+    padding: 0 15px;
+}
+
+/*
+BANNER SECTİON
+*/
+.banner {
+    min-height: 50vh;
+    background: linear-gradient(170deg, #212A39, #181E28)
+}
+
+.banner .container {
+    min-height: 50vh;
+    display: flex;
+    padding: 70px 0;
+    align-items: center;
+}
+
+.banner .container .banner-box {
+    width: 50%;
+}
+
+.banner .container .banner-box a {
+    transition: 200ms transform;
+}
+
+.banner .container .banner-box img {
+    max-width: 100%;
+}
+
+.banner .container .banner-box.banner-image {
+    padding-left: 150px;
+}
+
+.banner .container .banner-box.banner-image:hover {
+    transform: scale(1.1);
+} 
+
+.banner .container .banner-box h1 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 56px;
+}
+
+.banner .container .banner-box h2 {
+    font-size: 24px;
+    color: #80B6BE;
+    margin-top: 10px;
+}
+
+.banner .container .banner-box .btn {
+    margin-top: 65px;
+}
+
+.banner .container .banner-box .btn:hover {
+    transform: scale(1.05);
+}
+/*
+    SECTİON
+*/
+.section1 {
+    display: flex;
+    align-items: center;
+    padding: 120px 0 100px;
+}
+
+.section1 .lang {
+    display: flex;
+    width: 392px;
+    min-width: 392px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section1 .lang a {
+    width: 184px;
+    height: 184px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1); /*gölgelendirme*/
+    transition: 200ms all;
+}
+
+.section1 .lang a img {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.section1 .lang a .title {
+    font-size: 18px;
+    color: #111;
+}
+
+.section1 .lang a:hover {
+    transform: scale(1.05);
+}
+
+.section1 .inner {
+    padding-left: 160px;
+}
+
+.section1 .inner h3 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.section1 .inner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+/*
+    SECTİON 2
+*/
+.section2 {
+    background-color: #fff;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1); /*gölgelendirme*/
+    padding: 64px 96px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px
+}
+
+.section2 .icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #f4f5f9;
+    text-align: center;
+    line-height: 56px;
+    color: #d7dbe7;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.section2 p {
+    font: 22px/36px  Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 60%;
+}
+.section2 .user {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0, .7);
+}
+.section2 .user img {
+    width: 40px;
+    height: 40;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/*
+    SECTİON 3
+*/
+.section3 {
+    display: flex;
+    padding: 0 30px;
+}
+.section3 >div {
+    width: 50%;
+    min-width: 50%;
+}
+.section3 .text h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.section3 .text  p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #111;
+}
+.section3 .text .btn {
+    margin-top: 50px;
+}
+.section3 .image {
+    padding-top: 100px;
+}
+.section3 .image img {
+    width: 100%;
+    display: block;
+}
+
+/*
+    FOOTER
+*/
+.footer {
+    background: #141618;
+}
+.footer .container {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer .logo {
+    margin-bottom: 40px;
+}
+.footer .container .logo a img {
+    height: 50px;
+    width: 50px;
+}
+.footer .footer-nav {
+    display: flex;
+}
+.footer .footer-nav nav {
+    margin-right: 32px;
+}
+.footer .footer-nav nav h6 {
+    letter-spacing: 1.2px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.footer .footer-nav nav ul li {
+    margin-bottom: 6px;
+}
+.footer .footer-nav nav ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, .5);
+    transition: 200ms color;
+}
+.footer .footer-nav nav ul li a:hover {
+    color: #fff;
+}
+.footer .footer-nav .search {
+    margin-left: auto;
+}
+.footer .footer-nav .search h6 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.footer .footer-nav .search form {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.footer .footer-nav .search input {
+    height: 48px;
+    width: 375px;
+    background: #21252d;
+    padding: 0 15px;
+    color: #fff;
+}
+.footer .footer-nav .search button {
+    width: 48px;
+    height: 48px;
+    background: #316aff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer .copyright {
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid rgb(255, 255, 255, .05);
+    color: rgb(255, 255, 255, .5);
+}
+.footer .copyright a {
+    margin-right: 10px;
+    color: rgb(255, 255, 255, .5);
+    transition: 200ms color;
+}
+.footer .copyright a:hover {
+    color: #fff;
+}
+.footer .copyright text {
+    margin-left: 10px;
+}
